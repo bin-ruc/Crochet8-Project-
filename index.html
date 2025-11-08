@@ -1,86 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CHUNNU — A wearable connection you can connect with in your outfit</title>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <!-- 🖤 Navigation Bar -->
-  <nav class="navbar">
-    <div class="logo">CHUNNU</div>
-    <ul class="nav-links">
-      <li class="active">Home</li>
-    </ul>
-  </nav>
-
-  <!-- ✨ Header -->
-  <header class="hero">
-    <h1>CHUNNU</h1>
-    <p class="slogan">A wearable connection you can connect with in your outfit</p>
-  </header>
-
-  <!-- 🧢 Product Grid -->
-  <div class="product-container">
-    <!-- Product 1 -->
-    <div class="product" onclick="openModal('brown-shirt')">
+<!-- 🧢 Product Grid -->
+<div class="product-container">
+  <!-- Product 1: Brown Shirt -->
+  <div class="product" onclick="openModal('brown-shirt')">
+    <div class="product-box">
       <img src="images/brown-shirt.jpg" alt="Brown Streetwear Shirt" />
       <h3>Brown Aesthetic Streetwear Tattoo Shirt</h3>
       <p class="status preorder">Preorder Now</p>
     </div>
+  </div>
 
-    <!-- Product 2 -->
-    <div class="product" onclick="openModal('red-jersey')">
+  <!-- Product 2: Red Jersey -->
+  <div class="product" onclick="openModal('red-jersey')">
+    <div class="product-box">
       <img src="images/red-jersey.jpg" alt="Red Jersey" />
       <h3>Red Jersey Aesthetic</h3>
       <p class="status coming-soon">Coming Soon</p>
     </div>
+  </div>
 
-    <!-- Product 3 -->
-    <div class="product" onclick="openModal('black-jersey')">
+  <!-- Product 3: Black Jersey -->
+  <div class="product" onclick="openModal('black-jersey')">
+    <div class="product-box">
       <img src="images/black-jersey.jpg" alt="Black Jersey" />
       <h3>Black Jersey Aesthetic</h3>
       <p class="status coming-soon">Coming Soon</p>
     </div>
+  </div>
 
-    <!-- Product 4 -->
-    <div class="product" onclick="openModal('blue-jersey')">
+  <!-- Product 4: Blue Jersey -->
+  <div class="product" onclick="openModal('blue-jersey')">
+    <div class="product-box">
       <img src="images/blue-jersey.jpg" alt="Blue Jersey" />
       <h3>Blue Jersey Aesthetic</h3>
       <p class="status coming-soon">Coming Soon</p>
     </div>
   </div>
-
-  <!-- 🔗 Footer -->
-  <footer>
-    <p>Follow us: <a href="https://www.instagram.com/chunnu_brandofficial" target="_blank">@chunnu_brandofficial</a></p>
-  </footer>
-
-  <!-- 🪟 Modals -->
-  <div id="brown-shirt" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('brown-shirt')">&times;</span>
-      <img src="images/brown-shirt.jpg" alt="Brown Streetwear Shirt">
-      <h2>Brown Aesthetic Streetwear Tattoo Shirt</h2>
-      <p>Check the Google Form below for details & sizing info.</p>
-      <a class="order-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeRe8rX6UViGJlPSbl-H2b8Fe2RLL6Kq7bO9hqCAKKNW0j4tw/viewform?usp=header" target="_blank">
-        Order Now
-      </a>
-    </div>
-  </div>
-
-  <div id="red-jersey" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('red-jersey')">&times;</span>
-      <img src="images/red-jersey.jpg" alt="Red Jersey">
-      <h2>Red Jersey Aesthetic</h2>
-      <p>Details available soon!</p>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-</html>
+</div>
