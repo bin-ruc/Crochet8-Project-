@@ -17,29 +17,6 @@
         <!-- later you can add <li>Shop</li> or <li>Contact</li> -->
     </ul>
 </nav>
-
-<!-- 🧢 Product Grid -->
-<div class="product-container">
-    <!-- Product 1: Brown Shirt -->
-    <div class="product" onclick="openModal('brown-shirt')">
-        <img src="images/brown-shirt.jpg" alt="Brown Streetwear Shirt" />
-        <h3>Brown Aesthetic Streetwear Tattoo Shirt</h3>
-        <p class="status preorder">Preorder Now</p>
-    </div>
-
-    <!-- Product 2: Red Jersey -->
-    <div class="product" onclick="openModal('red-jersey')">
-        <img src="images/red-jersey.jpg" alt="Red Jersey" />
-        <h3>Red Jersey Aesthetic</h3>
-        <p class="status coming-soon">Coming Soon</p>
-    </div>
-</div>
-
-<!-- 🔗 Socials -->
-<footer>
-    <p>Follow us: <a href="https://www.instagram.com/chunnu_brandofficial">@chunnu_brandofficial</a></p>
-</footer>
-
 <!-- 🪟 Modal (Pop-Up) Section -->
 <div id="brown-shirt" class="modal">
     <div class="modal-content">
@@ -60,7 +37,47 @@
     </div>
 </div>
 
-<script src="script.js"><
+<script src="script.js"></script>
+</body>
+</html>
+
+<main class="product-grid">
+    <!-- Product 1 -->
+    <div class="product" onclick="openModal('brown-shirt')">
+        <img src="images/brown-shirt.jpg" alt="Brown Aesthetic Streetwear Fashion Tattoo Inspired" />
+        <h2>Brown Aesthetic Streetwear Fashion Tattoo Inspired</h2>
+        <p class="status preorder">Pre-order Now</p>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product" onclick="openModal('red-jersey')">
+        <img src="images/red-jersey.jpg" alt="Red Jersey Aesthetic" />
+        <h2>Red Jersey Aesthetic</h2>
+        <p class="status comingsoon">Coming Soon</p>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product" onclick="openModal('black-jersey')">
+        <img src="images/black-jersey.jpg" alt="Black Jersey Aesthetic" />
+        <h2>Black Jersey Aesthetic</h2>
+        <p class="status comingsoon">Coming Soon</p>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product" onclick="openModal('blue-jersey')">
+        <img src="images/blue-jersey.jpg" alt="Blue Jersey Aesthetic" />
+        <h2>Blue Jersey Aesthetic</h2>
+        <p class="status comingsoon">Coming Soon</p>
+    </div>
+</main>
+
+<!-- Modal -->
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="modalDetails"></div>
+    </div>
+</div>
 
 <footer>
     <p>© 2025 CHUNNU. A Connection for Everyone.</p>
